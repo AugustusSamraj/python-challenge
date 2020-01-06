@@ -35,7 +35,6 @@ AverageChange =round(sum(profitChange)/len(profitChange),2)
 ChangeAverage=mean(profitChange)
 #print(ChangeAverage)
 
-                     
 # Print Statements
 
 print("Python Challenge Financial Analysis")
