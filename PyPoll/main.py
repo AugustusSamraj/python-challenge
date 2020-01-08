@@ -23,7 +23,6 @@ with open(csvpath, newline='', encoding="utf-8") as csvfile:
 		CandidateList.append(row[2])
 
 def unique(CandidateList):
-	# Intilize
 	# For all elements
 	for x in CandidateList:
 		# check if exists in Candidates or not
@@ -35,16 +34,10 @@ def unique(CandidateList):
 	#for C in Candidates:
 		#print(C)
 unique(CandidateList)
-Candidates0Count=0
-Candidates1Count=0
-Candidates2Count=0
-Candidates3Count=0
 for i in range(len(CandidateList)):
 	#print(CandidateList[i])
 	for j in range(len(Candidates)):
 		if Candidates[j] == CandidateList[i]:
-			#if i < 5 :
-			#print(CandidateVotes[j])
 			CandidateVotes[j] = CandidateVotes[j] +1
 
 
